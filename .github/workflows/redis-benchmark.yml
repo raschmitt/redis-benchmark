@@ -1,4 +1,4 @@
-name: Test Container - Redis
+name: Benchmark - Redis
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
       - 'main'
 
 jobs:
-  test:
+  benchmark:
     runs-on: ubuntu-latest
 
     steps:

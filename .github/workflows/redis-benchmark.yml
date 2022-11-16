@@ -31,6 +31,22 @@ jobs:
           sudo apt update
           sudo apt install redis-tools
 
-      - name: 'Benchmark redis'
+      - name: 'Benchmark redis 100 bytes'
         run: |
-          redis-benchmark -q -t get,set
+          redis-benchmark -q -t get,set -d 100
+    
+      - name: 'Benchmark redis 1000 bytes'
+        run: |
+          redis-benchmark -q -t get,set -d 1000
+          
+      - name: 'Benchmark redis 10000 bytes'
+        run: |
+          redis-benchmark -q -t get,set -d 10000
+          
+      - name: 'Benchmark redis 100000 bytes'
+        run: |
+          redis-benchmark -q -t get,set -d 100000
+    
+      - name: 'Benchmark redis 1000000 bytes'
+        run: |
+          redis-benchmark -q -t get,set -d 1000000   

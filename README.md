@@ -1,4 +1,4 @@
-# redis-benchmark
+# redis-benchmark [![Benchmark - Redis](https://github.com/raschmitt/redis-benchmark/actions/workflows/redis-benchmark.yml/badge.svg)](https://github.com/raschmitt/redis-benchmark/actions/workflows/redis-benchmark.yml)
 
 Sample automated redis benchmark test using redis-benchmark utility and github actions.
 
